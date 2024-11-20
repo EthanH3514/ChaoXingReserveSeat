@@ -80,7 +80,7 @@ def debug(users, action=False):
         if type(seatid) == str:
             seatid = [seatid]
         if action:
-            username ,password = usernames.split(',')[index], passwords.split(',')[index]
+            username, password = usernames.split(',')[index], passwords.split(',')[index]
         if(current_dayofweek not in daysofweek):
             logging.info("Today not set to reserve")
             continue
