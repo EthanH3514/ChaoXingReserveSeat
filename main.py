@@ -13,6 +13,7 @@ get_current_dayofweek = lambda action: time.strftime("%A", time.localtime(time.t
 
 
 SLEEPTIME = 0.2 # 每次抢座的间隔
+START_TIME = "06:59:50" # 开始时间
 ENDTIME = "07:01:00" # 根据学校的预约座位时间+1min即可
 
 ENABLE_SLIDER = False # 是否有滑块验证
@@ -56,6 +57,9 @@ def main(users, action=False):
     success_list = None
     current_dayofweek = get_current_dayofweek(action)
     today_reservation_num = sum(1 for d in users if current_dayofweek in d.get('daysofweek'))
+    while current_time < START_TIME:
+        time.sleep(SLEEPTIME)
+        current_time = get_current_time(action)
     while current_time < ENDTIME:
         attempt_times += 1
         # try:
