@@ -68,6 +68,7 @@ class reserve:
         self.requests.get(url=self.login_page, verify=False)
 
     def login(self, username, password):
+        logging.info("login: before AES: {username}, {password}")
         username = AES_Encrypt(username)
         password = AES_Encrypt(password)
         parm = {
