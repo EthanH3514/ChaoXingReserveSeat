@@ -81,6 +81,8 @@ def debug(users, action=False):
     current_dayofweek = get_current_dayofweek(action)
     for index, user in enumerate(users):
         username, password, times, roomid, seatid, daysofweek = user.values()
+        logging.info(f"running debug: index: {index}")
+        logging.info(f"user: {user}, username: {username}, password:{password}")
         if type(seatid) == str:
             seatid = [seatid]
         if action:
