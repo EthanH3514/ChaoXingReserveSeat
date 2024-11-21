@@ -78,6 +78,8 @@ def debug(users, action=False):
     logging.info(f" Debug Mode start! , action {'on' if action else 'off'}")
     if action:
         usernames, passwords = get_user_credentials(action)
+        logging.info(f"action: {action}")
+        logging.info(f"usernames: {usernames}, passwords: {passwords}")
     current_dayofweek = get_current_dayofweek(action)
     for index, user in enumerate(users):
         username, password, times, roomid, seatid, daysofweek = user.values()
