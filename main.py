@@ -60,8 +60,7 @@ def main(users, action=False):
     while current_time < START_TIME:
         time.sleep(SLEEPTIME)
         current_time = get_current_time(action)
-    # while current_time < ENDTIME:
-    for i in range(0,10):
+    while current_time < ENDTIME:
         attempt_times += 1
         # try:
         success_list = login_and_reserve(users, usernames, passwords, action, success_list)
