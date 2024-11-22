@@ -7,7 +7,7 @@ def _fetch_env_variables(env_name, action):
     try:
         logging.info("_fetch_env_variables()")
         logging.info(f"action: {action}")
-        logging.info(f"return_value: {os.environ[env_name]}")
+        logging.info(f"os.environ: {os.environ}")
         return os.environ[env_name] if action else ""
     except KeyError:
         logging.info(f"Environment variable {env_name} is not configured correctly.")
