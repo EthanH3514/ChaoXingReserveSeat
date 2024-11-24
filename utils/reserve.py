@@ -200,7 +200,14 @@ class reserve:
         for seat in seatid:
             suc = False
             while ~suc and self.max_attempt > 0:
-                token = self._get_page_token(self.url.format(roomid, seat))
+                token = None
+                count = 0
+                while token is None:
+                    token = self._get_page_token(self.url.format(roomid, seat))
+                    count += 1
+                    if count >= 30:
+                        break
+                    time.sleep(0.2)
                 logging.info(f"Get token: {token}")
                 captcha = self.resolve_captcha() if self.enable_slider else "" 
                 logging.info(f"Captcha token {captcha}")
