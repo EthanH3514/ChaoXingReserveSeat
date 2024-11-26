@@ -3,7 +3,7 @@
         {
             "username": "xxxxxxxxxx",
             "password": "xxxxxxxxx",
-            "time": ["9:00","22:00"],
+            "time": ["8:00","22:00"],
             "roomid":"2610",
             "seatid":["084"],
             "daysofweek": ["Monday" , "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
@@ -11,7 +11,7 @@
         {
             "username": "",
             "password": "",
-            "time": ["9:00", "22:00"],
+            "time": ["8:00", "22:00"],
             "roomid": "2610",
             "seatid": ["083"],
             "daysofweek": ["Monday" , "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
