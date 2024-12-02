@@ -5,7 +5,7 @@
             "password": "xxxxxxxxx",
             "time": ["8:30","22:00"],
             "roomid":"2610",
-            "seatid":["078"],
+            "seatid":["075"],
             "daysofweek": ["Monday" , "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
         },
         {
@@ -13,7 +13,7 @@
             "password": "",
             "time": ["8:30", "22:00"],
             "roomid": "2610",
-            "seatid": ["077"],
+            "seatid": ["076"],
             "daysofweek": ["Monday" , "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
         }
     ]
