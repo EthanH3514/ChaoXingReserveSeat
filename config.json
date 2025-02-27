@@ -13,7 +13,7 @@
             "password": "",
             "time": ["9:00", "22:00"],
             "roomid": "2610",
-            "seatid": ["000"],
+            "seatid": ["112"],
             "daysofweek": ["Monday" , "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
         }
     ]
